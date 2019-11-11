@@ -4,10 +4,10 @@ export default function Display(props) {
   return (
     <div className="score-board">
       
-      <p>Strike: {props.strike}</p>
-      <p>{props.hit}</p>
-      <p>{props.foul}</p>
-      <p>Ball: {props.ball}</p>
+      <p data-testid="ball">Strike: {props.strike}</p>
+      <p data-testid="ball">{props.hit}</p>
+      <p data-testid="ball">{props.foul}</p>
+      <p data-testid="ball">Ball: {props.ball}</p>
     </div>
   );
 }
